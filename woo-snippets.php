@@ -65,7 +65,7 @@ function boxnow_checkout_custom_script() {
     }
 }
 
-// 2. PHP: Primi podatke i spremi u sesiju
+// 2. PHP: Primanje podataka i spremanje u sesiju
 add_action('wp_ajax_save_boxnow_locker_info', 'save_boxnow_locker_info');
 add_action('wp_ajax_nopriv_save_boxnow_locker_info', 'save_boxnow_locker_info');
 function save_boxnow_locker_info() {

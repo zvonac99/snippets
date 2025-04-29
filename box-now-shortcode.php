@@ -36,12 +36,14 @@ function show_boxnow_locker_info_shortcode($atts) {
     }
 
     // Priprema HTML bloka
+    // Koristi [boxnow_locker_info]
     ob_start();
     ?>
     <div style="border: 2px dashed #84c33e; padding: 15px; margin-top: 20px; background: #f8fff0;">
         <strong>📦 Dostava putem Box Now paketomata</strong><br><br>
-        <strong>Grad:</strong> <?php echo esc_html($locker_info['address2']); ?><br>
-        <strong>Adresa:</strong> <?php echo esc_html($locker_info['address1']); ?>
+		<strong>Ime:</strong> <?php echo esc_html($locker_info['ime']); ?><br>
+        <strong>Adresa:</strong> <?php echo esc_html($locker_info['adresa']); ?><br>
+        <strong>Grad:</strong> <?php echo esc_html($locker_info['grad']); ?>
     </div>
     <?php
     return ob_get_clean();
